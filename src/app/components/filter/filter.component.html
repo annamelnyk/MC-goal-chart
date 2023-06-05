@@ -1,0 +1,18 @@
+<div class="filter-container block">
+  <h3 class="filter-title">Filter</h3>
+  <label for="year" class="filter-select-label">Year</label>
+  <select
+    class="filter-select"
+    id="year"
+    [(ngModel)]="selectedYear"
+    (ngModelChange)="selectYear($event)"
+  >
+    <option
+      class="filter-select-option"
+      *ngFor="let year of years"
+      [value]="year"
+    >
+      {{ year }}
+    </option>
+  </select>
+</div>

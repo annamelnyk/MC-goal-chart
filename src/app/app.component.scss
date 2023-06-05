@@ -1,0 +1,35 @@
+@import "../styles";
+
+.app {
+  background-color: $c-bg-main;
+  padding: 30px;
+  min-height: 100vh;
+
+  &-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: auto;
+
+    @include laptop {
+      flex-direction: row;
+    }
+  }
+
+  &-filter {
+    @include laptop {
+      flex-basis: 30%;
+      margin-right: 35px;
+    }
+  }
+
+  &-chart {
+    margin-bottom: 30px;
+
+    @include laptop {
+      margin-bottom: 0;
+      flex-basis: 70%;
+    }
+  }
+}

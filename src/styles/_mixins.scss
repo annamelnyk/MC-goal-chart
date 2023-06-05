@@ -1,0 +1,31 @@
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $mobile) and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin block {
+  background-color: $c-bg-secondary;
+  border-radius: 15px;
+  padding: 20px;
+
+  @include tablet {
+    padding: 25px;
+  }
+
+  @include laptop {
+    padding: 40px;
+  }
+}

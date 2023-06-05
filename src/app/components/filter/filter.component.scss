@@ -1,0 +1,61 @@
+@import '../../../styles';
+
+.filter {
+  &-container {
+    font-size: 20px;
+
+    @include tablet {
+      width: 50%;
+    }
+
+    @include laptop {
+      font-size: 25px;
+      width: 100%;
+    }
+  }
+
+  &-title {
+    font-size: inherit;
+    font-weight: $f-weight-bold;
+    color: inherit;
+    margin-top: 0;
+  }
+
+  &-select {
+    appearance: none;
+    background: url('../../../assets/arrow-down.svg') no-repeat;
+    background-color: $c-dropdown-bg;
+    background-size: 4%;
+    background-position: 95% 60%;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    margin: 0;
+    width: 100%;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: $f-weight-light;
+    color: inherit;
+    cursor: pointer;
+
+    @include laptop {
+      padding: 20px 15px;
+      background-size: 5%;
+    }
+
+    &-option {
+      font-size: inherit;
+      color: inherit;
+      background-color: inherit;
+    }
+
+    &-label {
+      color: inherit;
+      font-weight: $f-weight-semibold;
+      font-size: inherit;
+      display: inline-block;
+      margin-bottom: 20px;  
+    }
+  }
+}

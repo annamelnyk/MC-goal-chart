@@ -12,6 +12,7 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
+/.vscode
 .idea/
 .project
 .classpath
@@ -21,7 +22,7 @@ yarn-error.log
 *.sublime-workspace
 
 # Visual Studio Code
-.vscode/*
+/.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -36,6 +37,7 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+package-lock.json
 
 # System files
 .DS_Store
